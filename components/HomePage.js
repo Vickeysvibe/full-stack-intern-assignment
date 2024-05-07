@@ -7,6 +7,8 @@ import logo from "@/public/Frame 4.png";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import app from "@/app/firebase/config";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
+
 export const HomePage = () => {
   const router = useRouter();
   const handle = async () => {
@@ -15,6 +17,7 @@ export const HomePage = () => {
     await signInWithPopup(auth, provider);
     router.push("/homepage");
   };
+
   return (
     <div className="container">
       <Image className="h3" src={logo} alt="hello" />
@@ -34,7 +37,12 @@ export const HomePage = () => {
             <Image className="img" src={google} alt="logo" />
             <p>Sign up with Google</p>
           </button>
-          <button onClick={() => {}} className="div">
+          <button
+            onClick={() => {
+              handle();
+            }}
+            className="div"
+          >
             <Image className="img" src={mail} alt="logo" />
             <p>Sign up with Email</p>
           </button>

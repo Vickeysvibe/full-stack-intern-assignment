@@ -20,6 +20,41 @@ body {
     background-size: cover;
   }
 }
+form {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  input {
+    color: aliceblue;
+    font-size: 15px;
+    margin: 24px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 320px;
+    height: 7vw;
+    max-height: 30px;
+    padding: 10px 10px;
+    background: #192734;
+    border: 2px solid #425568;
+    border-radius: 8px;
+  }
+  button {
+    color: aliceblue;
+    height: 30px;
+    width: 80px;
+    margin: 0 auto;
+    adding: 10px 10px;
+    background: #192734;
+    border: 2px solid #425568;
+    border-radius: 8px;
+  }
+}
+button {
+  cursor: pointer;
+}
 .container {
   display: flex;
   align-items: center;
@@ -85,6 +120,7 @@ body {
       margin-left: 30px;
     }
     h1 {
+      cursor: pointer;
       margin-right: 30px;
       color: #00b2ff;
     }

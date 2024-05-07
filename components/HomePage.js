@@ -17,7 +17,7 @@ export const HomePage = () => {
   };
   return (
     <div className="container">
-      <Image className="h3" src={logo} />
+      <Image className="h3" src={logo} alt="hello" />
       <p className="h4">Journey to a trillion miles starts from here!!</p>
       <div>
         <header>
